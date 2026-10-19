@@ -1,69 +1,33 @@
-# [Your Name] — Personal CV Website
+# Mahfood Balfaqeeh — CV Website
 
-A clean, responsive, single-page CV / portfolio site. No build step — just open `index.html` or host it for free on GitHub Pages.
+A single-page, responsive CV / portfolio site. No build step: open `index.html` or host it on GitHub Pages.
 
 ## 🚀 Quick start
 
 ```bash
-# Open locally
-open index.html   # macOS
-xdg-open index.html # Linux
-```
-
-Or serve it locally:
-
-```bash
-npx serve .
-# or
+xdg-open index.html        # Linux
+# or serve it locally
 python3 -m http.server 8000
 ```
 
-## 🎨 Customize it
+## ✏️ Editing
 
-1. **Personal info** — Edit `index.html`:
-   - Replace `[Your Name]`, `you@example.com`, phone, location, and social links in the `<header>` (hero) and `<section id="contact">`.
-   - Write your own summary in `#about`.
-   - Fill in `#experience` (copy `.timeline-item` blocks) and `#education`.
+- **Content** lives in `index.html`: Experience, Projects, Skills, Education and Contact sections.
+- **Terminal hero:** edit the `<p class="cmd">` / `<p class="out">` lines inside `#terminal-body`. The JS re-types whatever is there.
+- **Resume:** replace `assets/Mahfood-Balfaqeeh-Resume.pdf`. Both "Download CV" buttons link to it.
+- **Colors:** the light/dark token pairs are at the top of `css/style.css`.
 
-2. **Skills** — Edit the `.skill-list` items in `#skills` to match your resume.
+## ✨ Features
 
-3. **Projects** — Edit the `.project-card` entries in `#projects`.
-   - The first card features your **AllAfrica Logistics** repo (from `wasteloka/waste-allafrica`).
-   - Replace the placeholder cards with your own projects, tech stacks, and links.
-   - Swap the `.project-placeholder` divs for real screenshots or SVGs if you like.
+- Floating pill nav with backdrop blur and scroll spy
+- Light / System / Dark theme switch, saved in `localStorage`
+- Typed `echo $CURRENTLY` terminal hero (static when `prefers-reduced-motion` is set)
+- Impact strip, a date-left experience timeline, and a featured project with GitHub language-colour dots
+- Fade-up reveal on scroll, fluid `clamp()` type scale
 
-4. **Resume download** — Add your PDF to `assets/` and point the "Download CV" button at it:
-   ```html
-   <a href="assets/ResumeTemplate-2.pdf" class="btn btn-outline" download>Download CV</a>
-   ```
+Design ideas borrowed from portfolios in [emmabostian/developer-portfolios](https://github.com/emmabostian/developer-portfolios): heymufi.com, mhouge.dk, astro-portfolio-site.netlify.app, saidk.io, ryanyychen.github.io/portfolio and portfolio-n4sn.vercel.app.
 
 ## 📦 Deploy (GitHub Pages)
 
-```bash
-git add .
-git commit -m "Initial CV website"
-git push origin main
-```
-
-Then in GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / `(root)` → Save.** Your site will be live at `https://<user>.github.io/cv-website/`.
-
-## 🛠️ Tech
-
-- HTML5, CSS3 (custom properties, responsive grid)
-- Vanilla JavaScript (mobile menu, scroll spy, Intersection Observer)
-- Google Fonts: Inter + JetBrains Mono
-- Print stylesheet for clean PDF-ish printing
-
-## 📁 Projects featured (from your local repos)
-
-| Project | Stack | Notes |
-|---|---|---|
-| AllAfrica Logistics | NestJS, React 19, TS, Tailwind, Supabase | Air & sea freight portal — `wasteloka/waste-allafrica` |
-| [Your Project 2] | — | Add from your resume |
-| [Your Project 3] | — | Add from your resume |
-
-> **Note:** The GitHub remote for `waste-allafrica` was not reachable when this site was built — update the link if the repo has moved or been renamed.
-
----
-
-*Built quickly from your local workspace. Replace all `[bracketed]` placeholders with your own details.*
+Push to `main`, then go to **Settings → Pages → Deploy from a branch → `main` / `(root)`**.
+The site will be live at `https://mabloka.github.io/cv-website/`.

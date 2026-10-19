@@ -517,39 +517,6 @@ svg {
   }
 }
 
-/* Impact strip */
-.impact {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 64px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  overflow: hidden;
-}
-
-.impact li {
-  padding: 22px 24px;
-  border-left: 1px solid var(--border);
-}
-
-.impact li:first-child {
-  border-left: 0;
-}
-
-.impact-num {
-  display: block;
-  font-size: var(--fs-xl);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.2;
-}
-
-.impact-label {
-  color: var(--text-muted);
-  font-size: var(--fs-sm);
-}
-
 /* ==========================================================================
    Sections
    ========================================================================== */
@@ -1062,18 +1029,6 @@ svg {
     grid-template-columns: 1fr;
   }
 
-  .impact {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .impact li:nth-child(3) {
-    border-left: 0;
-  }
-
-  .impact li:nth-child(n + 3) {
-    border-top: 1px solid var(--border);
-  }
-
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -1142,16 +1097,3 @@ svg {
   }
 }
 
-@media (max-width: 420px) {
-  .impact {
-    grid-template-columns: 1fr;
-  }
-
-  .impact li {
-    border-left: 0;
-  }
-
-  .impact li:nth-child(n + 2) {
-    border-top: 1px solid var(--border);
-  }
-}

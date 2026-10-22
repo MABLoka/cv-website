@@ -60,8 +60,8 @@
         <p class="hero-kicker">Software Developer · Toronto, Canada</p>
         <h1 class="hero-title">Hi, I'm Mahfood.</h1>
         <p class="hero-subtitle">
-          I build fast full-stack systems and AI infrastructure, from React front-ends and NestJS
-          routing layers to emulators written in C. I study Computer Science at York University and
+          I build fast systems end to end, from React front-ends and NestJS LLM routing layers to
+          observable AI assistants and cycle-counted emulators in C. I study Computer Science at York University and
           I'm currently a Software Developer Intern at <strong>IBM Skills Network</strong>.
         </p>
         <div class="hero-actions">
@@ -72,7 +72,7 @@
           <li><a href="https://github.com/MABLoka" target="_blank" rel="noopener" aria-label="GitHub">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.9 18.3 5.2 18.3 5.2c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
           </a></li>
-          <li><a href="https://linkedin.com/in/mahfood-balfaqeeh/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <li><a href="https://ca.linkedin.com/in/mahfood-balfaqeeh-817339261" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
           </a></li>
           <li><a href="mailto:m.balfaqeeh02@gmail.com" aria-label="Email">
@@ -95,7 +95,7 @@
           <p class="cmd">echo $PREVIOUSLY</p>
           <p class="out">AI Intern @ Growth-Hacker</p>
           <p class="cmd">echo $INTERESTS</p>
-          <p class="out">full-stack systems · LLM infra · computer vision · emulators</p>
+          <p class="out">LLM infra · observability · emulators · ML from scratch</p>
         </div>
       </div>
     </div>
@@ -114,19 +114,38 @@
         <ol class="timeline">
           <li class="timeline-item reveal">
             <div class="timeline-meta">
-              <span class="timeline-date">Sept 2025 — Present</span>
+              <span class="timeline-date">May 2026 — Present</span>
               <span class="timeline-place">Markham, ON</span>
             </div>
             <div class="timeline-content">
               <h3 class="timeline-title">Software Developer Intern <span class="at">@ IBM Skills Network</span></h3>
               <ul class="timeline-list">
-                <li>Cut streaming costs by <strong>~$20,000/mo</strong> by refactoring React/TypeScript state, resolution encoding, and video sourcing.</li>
-                <li>Made AI Classroom chat <strong>10× faster</strong> by engineering a full-stack React, NestJS, and Redis caching architecture.</li>
-                <li>Unified <strong>40+ LLMs across 5 APIs</strong> with automated failover by building a centralized backend routing layer in NestJS.</li>
-                <li>Automated real-time lab debugging by building a context-tracking service that parses live user browser states.</li>
+                <li>Re-architected AI Classroom chat by caching session context in Redis and removing LangChain as an abstraction layer, cutting response times from 20–25s to <strong>2–3s (10× faster)</strong>.</li>
+                <li>Added prompt caching for system prompts, chat history, and tool calls, and restructured context retrieval to skip unneeded model calls, speeding up responses by <strong>55%+</strong>.</li>
+                <li>Instrumented the LangGraph AI assistant with OpenTelemetry, tracing every message and chat with tokens used, tokens cached, and time per chain. This exposed the bottlenecks that drove the 55%+ speedup.</li>
+                <li>Built a NestJS routing layer unifying <strong>40+ LLMs</strong> from OpenAI, Anthropic, watsonx.ai, Google, and Together AI with automatic failover and outage monitoring, powering model experimentation in AI Classroom.</li>
+                <li>Built a service that feeds live browser state into the AI assistant's context, enabling answers grounded in what users are currently doing.</li>
               </ul>
               <ul class="tags">
-                <li>React</li><li>TypeScript</li><li>NestJS</li><li>Redis</li><li>LLMs</li>
+                <li>NestJS</li><li>Redis</li><li>LangGraph</li><li>OpenTelemetry</li><li>Prompt caching</li><li>LLMs</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 2025 — Apr 2026</span>
+              <span class="timeline-place">Markham, ON</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Software Developer Intern <span class="at">@ IBM Skills Network</span></h3>
+              <ul class="timeline-list">
+                <li>Refactored React/TypeScript player state, resolution encoding, and video sourcing, cutting streaming costs by <strong>~$20K/month</strong>.</li>
+                <li>Migrated the internal support platform from Next.js to Vite with statically served pages instead of SSR, first locking in existing behavior with an end-to-end Playwright suite so the rewrite shipped without regressions.</li>
+                <li>Removed the need to run two servers in CI by serving static pages, <strong>halving Kubernetes pod size</strong> and cutting test runs by 15 min and builds by 3 min.</li>
+                <li>Extended the CI/CD release pipeline to run E2E tests against Docker images before release, adding a pluggable hook for custom test actions mid-workflow, now <strong>adopted by 3 teams</strong>.</li>
+              </ul>
+              <ul class="tags">
+                <li>React</li><li>TypeScript</li><li>Vite</li><li>Playwright</li><li>Docker</li><li>Kubernetes</li><li>CI/CD</li>
               </ul>
             </div>
           </li>
@@ -138,8 +157,8 @@
             <div class="timeline-content">
               <h3 class="timeline-title">AI Intern <span class="at">@ Growth-Hacker</span></h3>
               <ul class="timeline-list">
-                <li>Automated SEO keyword ranking at scale by building a Python scraping pipeline integrated with SEMrush/Ahrefs APIs (<a href="https://github.com/MABLoka/GW-Crawler" target="_blank" rel="noopener">GW-Crawler</a>).</li>
-                <li>Eliminated manual SEO page updates by developing a web app linking live analytics to automated content generation.</li>
+                <li>Automated keyword-ranking tracking by building a Python scraping pipeline integrated with the SEMrush and Ahrefs APIs (<a href="https://github.com/MABLoka/GW-Crawler" target="_blank" rel="noopener">GW-Crawler</a>).</li>
+                <li>Replaced manual SEO page updates with a web app that connects live analytics data to automated content generation.</li>
               </ul>
               <ul class="tags">
                 <li>Python</li><li>Web scraping</li><li>SEMrush API</li><li>Ahrefs API</li>
@@ -161,29 +180,52 @@
         <!-- Featured -->
         <article class="project-featured reveal">
           <div class="featured-visual" aria-hidden="true">
-            <div class="pipeline">
-              <span>capture</span><i></i><span>label</span><i></i><span>train</span><i></i><span>detect</span>
+            <div class="telemetry">
+              <div class="telemetry-head"><span>CPU 6502</span><span class="fps">60 FPS</span></div>
+              <dl class="regs">
+                <div><dt>PC</dt><dd>C5F5</dd></div>
+                <div><dt>A</dt><dd>00</dd></div>
+                <div><dt>X</dt><dd>FF</dd></div>
+                <div><dt>Y</dt><dd>00</dd></div>
+                <div><dt>SP</dt><dd>FD</dd></div>
+                <div><dt>P</dt><dd>24</dd></div>
+              </dl>
+              <ol class="trace">
+                <li><span>C5F5</span> LDX #$00</li>
+                <li><span>C5F7</span> STX $0200</li>
+                <li class="now"><span>C5FA</span> JSR $C72D</li>
+                <li><span>C72D</span> LDA $2002</li>
+              </ol>
             </div>
-            <div class="bbox"><span class="bbox-label">object 0.94</span></div>
           </div>
           <div class="featured-body">
-            <p class="project-eyebrow">Featured · Computer Vision</p>
-            <h3 class="project-title">Awar: Object Detection Pipeline</h3>
-            <p class="project-description">
-              An end-to-end workflow for training custom YOLOv8 detectors from a webcam: record video, label
-              frames in a custom Tkinter GUI that writes YOLO-format annotations, auto-split and train via
-              Ultralytics, then run low-latency live inference in OpenCV.
-            </p>
+            <p class="project-eyebrow">Featured · Systems / Emulation</p>
+            <h3 class="project-title">NES Emulator</h3>
+            <ul class="timeline-list">
+              <li>Implements all <strong>151 official 6502 opcodes</strong> (56 instructions, 12 addressing modes) with cycle-counted timing.</li>
+              <li>2C02 PPU background/sprite rendering, iNES cartridge loading, and Mapper 000 mapping.</li>
+              <li>A <strong>60 FPS</strong> Raylib frontend with a debugger for CPU registers, disassembly, and instruction/frame stepping.</li>
+            </ul>
             <ul class="tags">
-              <li><span class="lang" style="--lang:#3572A5"></span>Python</li><li>YOLOv8</li><li>OpenCV</li><li>Tkinter</li><li>Ultralytics</li>
+              <li><span class="lang" style="--lang:#555555"></span>C</li><li>Raylib</li><li>6502</li><li>2C02 PPU</li><li>iNES</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/MABLoka/awar" class="link-arrow" target="_blank" rel="noopener">View source</a>
+              <a href="https://github.com/MABLoka/NES-Emulator" class="link-arrow" target="_blank" rel="noopener">View source</a>
             </div>
           </div>
         </article>
 
         <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">✦</span>
+              <a href="https://github.com/MABLoka/LokaGPT" class="src" target="_blank" rel="noopener" aria-label="LokaGPT source">&lt;src/&gt;</a>
+            </div>
+            <h3 class="project-title">LokaGPT: Character-Level Transformer</h3>
+            <p class="project-description">A <strong>21M-parameter GPT</strong> trained from scratch in PyTorch, adapting nanoGPT's attention, MLP and LayerNorm blocks. It has a char-level tokenizer and an AdamW training loop with LR warmup/decay over a 98K-character Q&amp;A corpus.</p>
+            <ul class="tags"><li><span class="lang" style="--lang:#3572A5"></span>Python</li><li>PyTorch</li><li>Transformers</li></ul>
+          </article>
+
           <article class="project-card reveal">
             <div class="project-top">
               <span class="project-icon" aria-hidden="true">◎</span>
@@ -196,13 +238,12 @@
 
           <article class="project-card reveal">
             <div class="project-top">
-              <span class="project-icon" aria-hidden="true">▣</span>
-              <span class="status">In progress</span>
-              <a href="https://github.com/MABLoka/NES-Emulator" class="src" target="_blank" rel="noopener" aria-label="NES Emulator source">&lt;src/&gt;</a>
+              <span class="project-icon" aria-hidden="true">▢</span>
+              <a href="https://github.com/MABLoka/awar" class="src" target="_blank" rel="noopener" aria-label="Awar source">&lt;src/&gt;</a>
             </div>
-            <h3 class="project-title">NES Emulator</h3>
-            <p class="project-description">A Nintendo Entertainment System emulator in C covering the 6502 CPU's official opcodes, 2C02 PPU background and sprite rendering, and Mapper 000, with raylib for graphics.</p>
-            <ul class="tags"><li><span class="lang" style="--lang:#555555"></span>C</li><li>raylib</li><li>6502</li></ul>
+            <h3 class="project-title">Awar: Object Detection Pipeline</h3>
+            <p class="project-description">An end-to-end YOLOv8 workflow: capture webcam video, label frames in a custom Tkinter GUI, auto-split and train via Ultralytics, then run live inference in OpenCV.</p>
+            <ul class="tags"><li><span class="lang" style="--lang:#3572A5"></span>Python</li><li>YOLOv8</li><li>OpenCV</li></ul>
           </article>
 
           <article class="project-card reveal">
@@ -223,16 +264,6 @@
             <h3 class="project-title">LC-3 Virtual Machine</h3>
             <p class="project-description">Simulates the LC-3 architecture: registers, memory-mapped keyboard I/O, TRAP routines and a breakpoint debug mode. Also ported to <a href="https://github.com/MABLoka/LC3-Virtual-machine" target="_blank" rel="noopener">Java</a>.</p>
             <ul class="tags"><li><span class="lang" style="--lang:#555555"></span>C</li><li><span class="lang" style="--lang:#b07219"></span>Java</li></ul>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-top">
-              <span class="project-icon" aria-hidden="true">✦</span>
-              <a href="https://github.com/MABLoka/LokaGPT" class="src" target="_blank" rel="noopener" aria-label="LokaGPT source">&lt;src/&gt;</a>
-            </div>
-            <h3 class="project-title">LokaGPT</h3>
-            <p class="project-description">A character-level GPT built from scratch, inspired by nanoGPT. It covers self-attention, the MLP, layer norm, the training loop and text sampling.</p>
-            <ul class="tags"><li><span class="lang" style="--lang:#DA5B0B"></span>Jupyter</li><li>PyTorch</li><li>Transformers</li></ul>
           </article>
 
           <article class="project-card reveal">
@@ -281,22 +312,28 @@
           <div class="skill-group reveal">
             <h3 class="skill-title">Languages</h3>
             <ul class="tags tags-lg">
-              <li>TypeScript</li><li>Python</li><li>C/C++</li><li>C#</li><li>JavaScript</li><li>Java</li>
-              <li>Bash</li><li>MATLAB</li><li>HTML/CSS</li><li>SQL</li><li>NoSQL</li>
+              <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>C/C++</li><li>C#</li>
+              <li>Java</li><li>SQL</li><li>Bash</li><li>Ruby</li><li>Lua</li>
             </ul>
           </div>
           <div class="skill-group reveal">
             <h3 class="skill-title">Frameworks</h3>
             <ul class="tags tags-lg">
-              <li>React</li><li>NestJS</li><li>Node.js</li><li>Flask</li><li>PyTorch</li><li>OpenCV</li>
-              <li>JavaFX</li><li>Vite</li><li>Tailwind CSS</li>
+              <li>React</li><li>NestJS</li><li>Node.js</li><li>Flask</li><li>Tailwind CSS</li>
+              <li>Ruby on Rails</li><li>LangGraph</li>
             </ul>
           </div>
           <div class="skill-group reveal">
             <h3 class="skill-title">Developer Tools</h3>
             <ul class="tags tags-lg">
-              <li>Git</li><li>GitHub</li><li>AWS</li><li>Docker</li><li>Kubernetes</li><li>CI/CD</li>
-              <li>Linux/Unix</li><li>Redis</li><li>JUnit</li>
+              <li>Git</li><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>Redis</li>
+              <li>Linux</li><li>CI/CD</li><li>Playwright</li><li>OpenTelemetry</li><li>Vite</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-title">Libraries</h3>
+            <ul class="tags tags-lg">
+              <li>PyTorch</li><li>OpenCV</li><li>Ultralytics YOLO</li><li>Raylib</li>
             </ul>
           </div>
         </div>
@@ -317,14 +354,14 @@
               <p class="education-school">York University · Toronto, ON</p>
             </div>
             <div class="education-side">
-              <span class="education-date">Sep 2022 — Dec 2027</span>
+              <span class="education-date">Sep 2022 — Dec 2027 (Expected)</span>
               <span class="badge">Dean's Honour Roll</span>
             </div>
           </div>
           <p class="education-sub">Relevant coursework</p>
           <ul class="tags">
-            <li>Data Structures &amp; Algorithms</li><li>Object-Oriented Programming</li><li>Software Design</li>
-            <li>Computer Organization</li><li>Embedded Systems</li><li>Applied Machine Learning</li><li>Theory of Computation</li>
+            <li>Computer Organization</li><li>Embedded Systems</li><li>Data Structures &amp; Algorithms</li>
+            <li>Object-Oriented Programming</li><li>Software Design</li><li>Applied Machine Learning</li><li>Theory of Computation</li>
           </ul>
         </div>
       </div>
@@ -338,7 +375,7 @@
         <p class="contact-lead">I'm open to internships, new-grad roles and interesting collaborations. My inbox is always open.</p>
         <a class="contact-email" href="mailto:m.balfaqeeh02@gmail.com">m.balfaqeeh02@gmail.com</a>
         <div class="contact-links">
-          <a href="https://linkedin.com/in/mahfood-balfaqeeh/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="https://ca.linkedin.com/in/mahfood-balfaqeeh-817339261" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
           <a href="https://github.com/MABLoka" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
           <a href="assets/Mahfood-Balfaqeeh-Resume.pdf" class="btn btn-primary" download>Download CV</a>
         </div>
